@@ -1,0 +1,20 @@
+{
+	"name": "@app/lib",
+	"version": "1.0.0",
+	"private": true,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"typescript": "^5.9.3"
+	},
+	"dependencies": {
+		"@app/domain": "*",
+		"zod": "^4.3.6"
+	}
+}
