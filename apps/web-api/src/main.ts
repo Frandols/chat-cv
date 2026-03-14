@@ -9,6 +9,9 @@ async function bootstrap() {
   app.use(helmet());
   app.enableCors({
     origin: process.env.CORS_ORIGIN,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   });
   app.useGlobalFilters(new HttpExceptionFilter());
 
