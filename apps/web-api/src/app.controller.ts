@@ -1,6 +1,6 @@
 import { type CV } from '@app/domain';
-import { GenerateCvUseCase } from '@application/use-cases/GenerateCvUseCase';
 import { Body, Controller, Post } from '@nestjs/common';
+import { GenerateCvUseCase } from './application/use-cases/GenerateCvUseCase';
 import { GenerateCVDto } from './web-api/dto/GenerateCVDto';
 
 @Controller()
