@@ -1,10 +1,10 @@
-import { GenerateCvUseCase } from '@application/use-cases/GenerateCvUseCase';
 import { AIGeneratedCVFactory } from '@infrastructure/CVFactory/AIGeneratedCVFactory';
 import { Module } from '@nestjs/common';
 import { APP_PIPE } from '@nestjs/core';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { ZodValidationPipe } from 'nestjs-zod';
 import { AppController } from './app.controller';
+import { GenerateCvUseCase } from './application/use-cases/GenerateCvUseCase';
 
 @Module({
   imports: [
