@@ -1,4 +1,4 @@
-import { CV, DefaultTextPart, TextPart } from '@app/domain/src/entities'
+import type { CV, DefaultTextPart, TextPart } from '@app/domain/src/entities'
 import { XMLParser } from 'fast-xml-parser'
 
 const parser = new XMLParser({

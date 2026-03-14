@@ -1,4 +1,4 @@
-import { CV, DefaultTextPart } from '@app/domain/src/entities'
+import type { CV, DefaultTextPart } from '@app/domain/src/entities'
 
 function partToXml(
 	part: DefaultTextPart['props'],
